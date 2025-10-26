@@ -5,14 +5,16 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--bg-color);
+  padding: 0 var(--global-padding);
   color: var(--font-color);
   font-size: var(--font-size);
+  line-height: var(--text-line-height);
 }
 
 .decorated-zone::before,
 .decorated-zone::after {
   position: absolute;
-  border: solid 1px var(--accent-color);
+  border: solid 1px var(--decor-color);
   width: 25px;
   height: 25px;
   content: '';
@@ -75,9 +77,9 @@
   position: absolute;
   top: calc(var(--global-padding) + 8px);
   right: 9px;
-  box-shadow: 0 0 4px 2px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--decor-color);
   border-radius: 50%;
-  background-color: var(--accent-color);
+  background-color: var(--decor-color);
   width: 9px;
   height: 9px;
   content: '';
@@ -113,12 +115,12 @@
   border: none;
   background-color: transparent;
   padding: 1.5px 13px;
-  color: var(--menu-font-color);
+  color: var(--decor-color);
   text-transform: lowercase;
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--menu-font-color-transparent);
+  outline: 1px solid var(--decor-color-transparent);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -151,7 +153,8 @@
 .header__description {
   grid-area: header-description;
   align-self: center;
-  margin-bottom: 10px;
+  margin-bottom: var(--global-padding);
+  line-height: var(--text-line-height);
 }
 
 @media (width >= 1024px) {
@@ -170,14 +173,14 @@
 
 .content {
   display: grid;
-  gap: 17px;
+  gap: 20px;
   margin-bottom: var(--section-bottom-margin);
 }
 
 .content__header {
   color: var(--header-font-color);
   font-size: inherit;
-  line-height: 130%;
+  line-height: var(--text-line-height);
 }
 
 .content__card-list {
@@ -198,6 +201,12 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 'problem-header problem-card-list';
+  }
+}
+
+@media (width >= 1024px) {
+  .problem {
+    gap: 10px;
   }
 }
 
@@ -262,6 +271,12 @@
     grid-template-areas:
       'advices-header advices-subheader'
       'advices-header advices-card-list';
+  }
+}
+
+@media (width >= 1024px) {
+  .advices {
+    column-gap: 10px;
   }
 }
 

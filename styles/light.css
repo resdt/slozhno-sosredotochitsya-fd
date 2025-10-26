@@ -2,12 +2,12 @@
   --bg-color: #fff1f7;
   --bg-image: url(../images/cover-image-light.png);
   --accent-color: #ff8dcb;
-  --menu-font-color: #353430;
-  --menu-font-color-transparent: rgba(53, 52, 48, 0.5);
   --title-font-color: #ffc2e6;
-  --header-font-color: #353430;
-  --subheader-font-color: #353430;
   --font-color: #353430;
+  --header-font-color: var(--font-color);
+  --subheader-font-color: var(--font-color);
+  --decor-color: var(--font-color);
+  --decor-color-transparent: rgba(53, 52, 48, 0.5);
 
   .header__decor-text {
     display: none;
@@ -19,12 +19,12 @@
     --bg-color: #fff1f7;
     --bg-image: url(../images/cover-image-light.png);
     --accent-color: #ff8dcb;
-    --menu-font-color: #353430;
-    --menu-font-color-transparent: rgba(53, 52, 48, 0.5);
     --title-font-color: #ffc2e6;
-    --header-font-color: #353430;
-    --subheader-font-color: #353430;
     --font-color: #353430;
+    --header-font-color: var(--font-color);
+    --subheader-font-color: var(--font-color);
+    --decor-color: var(--font-color);
+    --decor-color-transparent: rgba(53, 52, 48, 0.5);
 
     .header__decor-text {
       display: none;

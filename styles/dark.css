@@ -2,12 +2,12 @@
   --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
-  --menu-font-color: #ff0070;
-  --menu-font-color-transparent: rgba(255, 0, 112, 0.5);
   --title-font-color: #db00ff;
-  --header-font-color: #ff0070;
-  --subheader-font-color: #000028;
   --font-color: #f1b2ce;
+  --header-font-color: var(--accent-color);
+  --subheader-font-color: var(--bg-color);
+  --decor-color: var(--accent-color);
+  --decor-color-transparent: rgba(255, 0, 112, 0.5);
 
   .header__decor-text {
     display: block;
