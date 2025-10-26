@@ -5,7 +5,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--bg-color);
-  padding: 0 var(--global-padding);
   color: var(--font-color);
   font-size: var(--font-size);
   line-height: var(--text-line-height);
@@ -44,6 +43,7 @@
     'header-title'
     'header-description';
   margin-bottom: var(--side-section-bottom-margin);
+  padding: 0 var(--global-padding);
   height: 100vh;
   min-height: 668px;
 }
@@ -194,6 +194,7 @@
   grid-template-areas:
     'problem-header'
     'problem-card-list';
+  padding: 0 var(--global-padding);
 }
 
 @media (width >= 768px) {
@@ -229,6 +230,7 @@
   grid-template-areas:
     'reasons-header'
     'reasons-card-list';
+  padding: 0 var(--global-padding);
 }
 
 @media (width >= 768px) {
@@ -262,6 +264,7 @@
     'advices-header'
     'advices-subheader'
     'advices-card-list';
+  padding: 0 var(--global-padding);
 }
 
 @media (width >= 768px) {
@@ -328,6 +331,7 @@
   grid-template-columns: 1fr;
   gap: 10px;
   margin-bottom: var(--side-section-bottom-margin);
+  padding: 0 var(--global-padding);
 }
 
 @media (width >= 768px) {
@@ -370,6 +374,7 @@
 .footer {
   display: grid;
   position: relative;
+  padding: 0 var(--global-padding);
   height: 100vh;
 }
 
