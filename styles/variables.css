@@ -1,4 +1,28 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --global-padding: 10px;
+  --section-bottom-margin: 50px;
+  --side-section-bottom-margin: 40px;
+  --bg-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
+  --accent-color: #ff0070;
+  --menu-top-margin: calc(72px - var(--global-padding));
+  --menu-font-color: #ff0070;
+  --menu-font-color-transparent: rgba(255, 0, 112, 0.5);
+  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-font-weight: bold;
+  --title-font-color: #db00ff;
+  --header-font-color: #ff0070;
+  --subheader-font-color: #000028;
+  --subheader-font-weight: bold;
+  --font-size: 18px;
+  --font-color: #f1b2ce;
+}
+
+@media (width >=768px) {
+  :root {
+    --global-padding: 20px;
+    --side-section-bottom-margin: 60px;
+    --section-bottom-margin: 80px;
+    --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
