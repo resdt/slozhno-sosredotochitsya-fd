@@ -7,7 +7,7 @@
   --header-font-color: var(--font-color);
   --subheader-font-color: var(--font-color);
   --decor-color: var(--font-color);
-  --decor-color-transparent: rgba(53, 52, 48, 0.5);
+  --decor-color-transparent: rgba(53, 52, 48, 0.4);
 
   .header__decor-text {
     display: none;
@@ -24,7 +24,7 @@
     --header-font-color: var(--font-color);
     --subheader-font-color: var(--font-color);
     --decor-color: var(--font-color);
-    --decor-color-transparent: rgba(53, 52, 48, 0.5);
+    --decor-color-transparent: rgba(53, 52, 48, 0.4);
 
     .header__decor-text {
       display: none;

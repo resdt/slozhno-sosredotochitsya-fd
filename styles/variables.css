@@ -1,5 +1,6 @@
 :root {
   --global-padding: 10px;
+  --font-family: 'IBM Plex mono', sans-serif;
   --section-bottom-margin: 50px;
   --side-section-bottom-margin: 40px;
   --bg-color: #000028;
@@ -7,7 +8,7 @@
   --accent-color: #ff0070;
   --menu-top-margin: calc(72px - var(--global-padding));
   --decor-color: var(--accent-color);
-  --decor-color-transparent: rgba(255, 0, 112, 0.5);
+  --decor-color-transparent: rgba(255, 0, 112, 0.4);
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-font-weight: bold;
   --title-font-color: #db00ff;
